@@ -1,0 +1,19 @@
+{
+  "name": "pwa-clock",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"All fine\" && exit 0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/bigantal/pwa-clock.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/bigantal/pwa-clock/issues"
+  },
+  "homepage": "https://github.com/bigantal/pwa-clock#readme"
+}
