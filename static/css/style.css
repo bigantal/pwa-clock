@@ -39,3 +39,11 @@ html,
   font-size: 40vh;
   margin: 0;
 }
+
+.clock.anim {
+  background-image: url(../images/anim-bw.gif);
+  background-size: cover;
+  color: transparent;
+  -moz-background-clip: text;
+  -webkit-background-clip: text;
+}

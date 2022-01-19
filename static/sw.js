@@ -5,7 +5,8 @@ var filesToCache = [
   '/css/style.css',
   '/js/main.js',
   '/fonts/orbitron.woff2',
-  '/fonts/ShareTechMono-Regular.ttf'
+  '/fonts/ShareTechMono-Regular.ttf',
+  '/images/anim-bw.gif'
 ];
 
 /* Start the service worker and cache all of the app's content */
