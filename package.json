@@ -15,5 +15,8 @@
   "bugs": {
     "url": "https://github.com/bigantal/pwa-clock/issues"
   },
-  "homepage": "https://github.com/bigantal/pwa-clock#readme"
+  "homepage": "https://github.com/bigantal/pwa-clock#readme",
+  "dependencies": {
+    "express": "^4.17.2"
+  }
 }
