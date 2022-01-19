@@ -1,26 +1,29 @@
 window.onload = () => {
-  'use strict';
+    'use strict';
 
-  if ('serviceWorker' in navigator) {
-    navigator.serviceWorker
-      .register('./sw.js');
-  }
+    if ('serviceWorker' in navigator) {
+        navigator.serviceWorker
+            .register('./sw.js');
+    }
 
 
-  updateTime();
-  setInterval(() => {
     updateTime();
-  }, 1000);
+    setInterval(() => {
+        updateTime();
+    }, 1000);
 
 }
 
 let timeStr = "";
+
 function updateTime() {
-  const time = new Date();
-  const timeStr2 = `${time.getHours()}:${time.getMinutes()}`;
-  if (timeStr !== timeStr2) {
-    timeStr = timeStr2;
-    const clockEl=document.getElementsByClassName("clock")[0];
-    clockEl.innerHTML = timeStr;
-  }
+    const time = new Date();
+    const hour = time.getHours() < 10 ? "0" + time.getHours() : time.getHours();
+    const minute = time.getMinutes() < 10 ? "0" + time.getMinutes() : time.getMinutes();
+    const timeStr2 = `${hour}:${minute}`;
+    if (timeStr !== timeStr2) {
+        timeStr = timeStr2;
+        const clockEl = document.getElementsByClassName("clock")[0];
+        clockEl.innerHTML = timeStr;
+    }
 }
