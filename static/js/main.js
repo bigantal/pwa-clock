@@ -21,8 +21,7 @@ function updateTime() {
     if (timeStr !== timeStr2) {
         timeStr = timeStr2;
         const clockEl = document.getElementsByClassName("clock")[0];
-        clockEl.innerHTML = timeStr;
-        addAnim(clockEl);
+        addWithAnim(clockEl, timeStr);
     }
 }
 
@@ -33,10 +32,14 @@ function getTimeStr() {
     return `${hour}:${minute}`;
 }
 
-function addAnim(elem) {
+function addWithAnim(elem, timeStr) {
+    const length = 180;
     elem.classList.add("anim");
     setTimeout(() => {
+        elem.innerHTML = timeStr;
+    }, length / 2);
+    setTimeout(() => {
         elem.classList.remove("anim");
-    }, 150);
+    }, length / 2);
 
 }
