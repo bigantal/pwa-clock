@@ -14,7 +14,7 @@ window.onload = () => {
 
 }
 
-let timeStr = "     ";
+let timeStr = "--:--";
 
 function updateTime() {
     const timeStr2 = getTimeStr();
