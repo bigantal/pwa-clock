@@ -33,7 +33,7 @@ function getTimeStr() {
 }
 
 function addWithAnim(elem, timeStr) {
-    const length = 180;
+    const length = 240;
     elem.classList.add("anim");
     setTimeout(() => {
         elem.innerHTML = timeStr;
