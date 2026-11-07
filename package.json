@@ -1,26 +1,22 @@
 {
   "name": "pwa-clock",
   "version": "1.0.0",
-  "description": "",
-  "engines": {
-    "node": "16.x"
-  },
-  "main": "index.js",
+  "description": "A minimal full-screen clock PWA",
   "scripts": {
-    "start": "node index.js",
-    "test": "echo \"All fine\" && exit 0"
+    "start": "npx --yes serve static",
+    "test": "node --test"
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/bigantal/pwa-clock.git"
   },
   "author": "",
-  "license": "ISC",
+  "license": "Apache-2.0",
   "bugs": {
     "url": "https://github.com/bigantal/pwa-clock/issues"
   },
-  "homepage": "https://github.com/bigantal/pwa-clock#readme",
-  "dependencies": {
-    "express": "^4.17.2"
+  "homepage": "https://bigantal.github.io/pwa-clock/",
+  "engines": {
+    "node": ">=20"
   }
 }
